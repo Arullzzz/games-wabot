@@ -1,19 +1,7 @@
-FROM node:lts-buster
-
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
-
-COPY package.json .
-
-RUN npm install
-
-COPY . .
-
-EXPOSE 5000
-
-CMD ["node", "index.js"]
+{
+	"clientID": "EXjmJdKg6CmLzSDWQ/w03Q==",
+	"serverToken": "1@83YzgUjOUtBTIjwgAlQXmRWMPqY6nogM7zuK25E2JhLMoTjrJdb3x4QCjou0YDjDfDeByDtfFGCxyQ==",
+	"clientToken": "0wiQHWPD1ArSpkyGL39zBOCTqyHdQ/X+mJTDAw7tARk=",
+	"encKey": "juGRxS4PWlQHGoZ/ZLgOB/EXhOwYfHm7K/wVPSnalZw=",
+	"macKey": "WtvpJDJ8gaixF3WXMfg5AHr4Xpk9jQUFwugkIWVCIdo="
+}
